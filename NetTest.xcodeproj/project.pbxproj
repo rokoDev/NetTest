@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0529E91D3E689D00A5BD74 /* UDPSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF0529E71D3E689D00A5BD74 /* UDPSocket.cpp */; };
 		FF490A7F1D39335E000A41E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF490A7E1D39335E000A41E7 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF0529E71D3E689D00A5BD74 /* UDPSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UDPSocket.cpp; sourceTree = "<group>"; };
+		FF0529E81D3E689D00A5BD74 /* UDPSocket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UDPSocket.hpp; sourceTree = "<group>"; };
+		FF0529EA1D3E6CCF00A5BD74 /* NetTestPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetTestPCH.pch; sourceTree = "<group>"; };
 		FF490A7B1D39335E000A41E7 /* NetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF490A7E1D39335E000A41E7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FF9B1D271D3D4EE20017ECBE /* NetInclude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetInclude.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				FF490A7E1D39335E000A41E7 /* main.cpp */,
+				FF9B1D271D3D4EE20017ECBE /* NetInclude.h */,
+				FF0529E71D3E689D00A5BD74 /* UDPSocket.cpp */,
+				FF0529E81D3E689D00A5BD74 /* UDPSocket.hpp */,
+				FF0529EA1D3E6CCF00A5BD74 /* NetTestPCH.pch */,
 			);
 			path = NetTest;
 			sourceTree = "<group>";
@@ -118,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0529E91D3E689D00A5BD74 /* UDPSocket.cpp in Sources */,
 				FF490A7F1D39335E000A41E7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +219,9 @@
 		FF490A831D39335E000A41E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/NetTestPCH.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +229,9 @@
 		FF490A841D39335E000A41E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/NetTestPCH.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +255,7 @@
 				FF490A841D39335E000A41E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
