@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF0529E91D3E689D00A5BD74 /* UDPSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF0529E71D3E689D00A5BD74 /* UDPSocket.cpp */; };
+		FF295F801D3E87DA000F89DF /* SocketUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF295F7E1D3E87DA000F89DF /* SocketUtil.cpp */; };
 		FF490A7F1D39335E000A41E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF490A7E1D39335E000A41E7 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,9 @@
 		FF0529E71D3E689D00A5BD74 /* UDPSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UDPSocket.cpp; sourceTree = "<group>"; };
 		FF0529E81D3E689D00A5BD74 /* UDPSocket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UDPSocket.hpp; sourceTree = "<group>"; };
 		FF0529EA1D3E6CCF00A5BD74 /* NetTestPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetTestPCH.pch; sourceTree = "<group>"; };
+		FF295F7E1D3E87DA000F89DF /* SocketUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketUtil.cpp; sourceTree = "<group>"; };
+		FF295F7F1D3E87DA000F89DF /* SocketUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SocketUtil.hpp; sourceTree = "<group>"; };
+		FF295F841D3FEF07000F89DF /* easylogging++.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "easylogging++.h"; path = "NetTest/easylogging++.h"; sourceTree = "<group>"; };
 		FF490A7B1D39335E000A41E7 /* NetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF490A7E1D39335E000A41E7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FF9B1D271D3D4EE20017ECBE /* NetInclude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetInclude.h; sourceTree = "<group>"; };
@@ -43,9 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF295F821D3FEE96000F89DF /* logging */ = {
+			isa = PBXGroup;
+			children = (
+				FF295F841D3FEF07000F89DF /* easylogging++.h */,
+			);
+			name = logging;
+			sourceTree = "<group>";
+		};
 		FF490A721D39335E000A41E7 = {
 			isa = PBXGroup;
 			children = (
+				FF295F821D3FEE96000F89DF /* logging */,
 				FF490A7D1D39335E000A41E7 /* NetTest */,
 				FF490A7C1D39335E000A41E7 /* Products */,
 			);
@@ -64,9 +77,11 @@
 			children = (
 				FF490A7E1D39335E000A41E7 /* main.cpp */,
 				FF9B1D271D3D4EE20017ECBE /* NetInclude.h */,
+				FF0529EA1D3E6CCF00A5BD74 /* NetTestPCH.pch */,
 				FF0529E71D3E689D00A5BD74 /* UDPSocket.cpp */,
 				FF0529E81D3E689D00A5BD74 /* UDPSocket.hpp */,
-				FF0529EA1D3E6CCF00A5BD74 /* NetTestPCH.pch */,
+				FF295F7E1D3E87DA000F89DF /* SocketUtil.cpp */,
+				FF295F7F1D3E87DA000F89DF /* SocketUtil.hpp */,
 			);
 			path = NetTest;
 			sourceTree = "<group>";
@@ -127,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF295F801D3E87DA000F89DF /* SocketUtil.cpp in Sources */,
 				FF0529E91D3E689D00A5BD74 /* UDPSocket.cpp in Sources */,
 				FF490A7F1D39335E000A41E7 /* main.cpp in Sources */,
 			);

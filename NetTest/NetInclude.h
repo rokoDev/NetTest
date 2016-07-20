@@ -10,23 +10,25 @@
 //#define NetInclude_h
 
 #ifdef _WIN32
-#define WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN//to avoid name conflict between Windows.h and WinSock2.h(this disable old socket functions in Windows.h)
 #define NOMINMAX
 
 #include "Windows.h"
 #include "WinSock2.h"
-#include "Ws2tcpip.h"
+#include "Ws2tcpip.h"//address conversion functionality
 typedef int socklen_t;
 //typedef char* receiveBufer_t;
 #else
 #include <sys/socket.h>
-#include <netinet/in.h>
+#include <netinet/in.h>//IPv4 specific functionality
 #include <sys/types.h>
-#include <netdb.h>
+#include <netdb.h>//to perform name resolution
 #include <errno.h>
 #include <fcntl.h>
+#include <arpa/inet.h>//address conversion functionality
 //typedef void* receiveBufer_t;
-typedef int SOCKET;
+//typedef int SOCKET;
+using SOCKET = int;//instead of typedef
 const int NO_ERROR = 0;
 const int INVALID_SOCKET = -1;
 const int WSAECONNRESET = ECONNRESET;

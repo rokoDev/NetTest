@@ -8,8 +8,14 @@
 
 #include <iostream>
 
+#include "easylogging++.h"
+
+INITIALIZE_EASYLOGGINGPP
+
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    START_EASYLOGGINGPP(argc, argv);
+    
+    LOG(INFO) << "Hello, World!\n";
     return 0;
 }
