@@ -9,11 +9,48 @@
 /* Begin PBXBuildFile section */
 		FF0529E91D3E689D00A5BD74 /* UDPSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF0529E71D3E689D00A5BD74 /* UDPSocket.cpp */; };
 		FF295F801D3E87DA000F89DF /* SocketUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF295F7E1D3E87DA000F89DF /* SocketUtil.cpp */; };
+		FF295F901D3FFC66000F89DF /* myconfig.conf in Copy Files */ = {isa = PBXBuildFile; fileRef = FF295F871D3FF9F1000F89DF /* myconfig.conf */; };
 		FF490A7F1D39335E000A41E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF490A7E1D39335E000A41E7 /* main.cpp */; };
+		FF8B75791D4283BF0055AE43 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF8B75781D4283BF0055AE43 /* main.cpp */; };
+		FF8B757D1D4284250055AE43 /* UDPSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF0529E71D3E689D00A5BD74 /* UDPSocket.cpp */; };
+		FF8B757E1D4284290055AE43 /* SocketUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF295F7E1D3E87DA000F89DF /* SocketUtil.cpp */; };
+		FF8B75DF1D42849B0055AE43 /* libboost_unit_test_framework-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8B75DE1D42849B0055AE43 /* libboost_unit_test_framework-mt.dylib */; };
+		FF8B75E21D4285830055AE43 /* TestSomeClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF8B75E01D4285830055AE43 /* TestSomeClass.cpp */; };
+		FF8B75E41D428A200055AE43 /* myconfig.conf in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF295F871D3FF9F1000F89DF /* myconfig.conf */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FF8B75FC1D429B790055AE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF490A731D39335E000A41E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8B75751D4283BF0055AE43;
+			remoteInfo = BoostUTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		FF295F8F1D3FFC47000F89DF /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				FF295F901D3FFC66000F89DF /* myconfig.conf in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF490A791D39335E000A41E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FF8B75741D4283BF0055AE43 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -21,6 +58,16 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FF8B75E31D4289F20055AE43 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				FF8B75E41D428A200055AE43 /* myconfig.conf in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -30,9 +77,55 @@
 		FF0529EA1D3E6CCF00A5BD74 /* NetTestPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetTestPCH.pch; sourceTree = "<group>"; };
 		FF295F7E1D3E87DA000F89DF /* SocketUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketUtil.cpp; sourceTree = "<group>"; };
 		FF295F7F1D3E87DA000F89DF /* SocketUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SocketUtil.hpp; sourceTree = "<group>"; };
-		FF295F841D3FEF07000F89DF /* easylogging++.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "easylogging++.h"; path = "NetTest/easylogging++.h"; sourceTree = "<group>"; };
+		FF295F861D3FF5FD000F89DF /* easylogging++.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "easylogging++.h"; sourceTree = "<group>"; };
+		FF295F871D3FF9F1000F89DF /* myconfig.conf */ = {isa = PBXFileReference; lastKnownFileType = text; path = myconfig.conf; sourceTree = "<group>"; };
 		FF490A7B1D39335E000A41E7 /* NetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF490A7E1D39335E000A41E7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FF8B75761D4283BF0055AE43 /* BoostUTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BoostUTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8B75781D4283BF0055AE43 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FF8B75B51D42846E0055AE43 /* cleanup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cleanup.hpp; sourceTree = "<group>"; };
+		FF8B75B61D42846E0055AE43 /* config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
+		FF8B75B71D42846E0055AE43 /* constraint.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = constraint.hpp; sourceTree = "<group>"; };
+		FF8B75B81D42846E0055AE43 /* constraints.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = constraints.hpp; sourceTree = "<group>"; };
+		FF8B75BA1D42846E0055AE43 /* action.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = action.hpp; sourceTree = "<group>"; };
+		FF8B75BB1D42846E0055AE43 /* addressof.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = addressof.hpp; sourceTree = "<group>"; };
+		FF8B75BC1D42846E0055AE43 /* child.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = child.hpp; sourceTree = "<group>"; };
+		FF8B75BD1D42846E0055AE43 /* context.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = context.hpp; sourceTree = "<group>"; };
+		FF8B75BE1D42846E0055AE43 /* expectation_template.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = expectation_template.hpp; sourceTree = "<group>"; };
+		FF8B75BF1D42846E0055AE43 /* formatter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = formatter.hpp; sourceTree = "<group>"; };
+		FF8B75C01D42846E0055AE43 /* function.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = function.hpp; sourceTree = "<group>"; };
+		FF8B75C11D42846E0055AE43 /* function_impl_template.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = function_impl_template.hpp; sourceTree = "<group>"; };
+		FF8B75C21D42846E0055AE43 /* function_iterate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = function_iterate.hpp; sourceTree = "<group>"; };
+		FF8B75C31D42846E0055AE43 /* function_template.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = function_template.hpp; sourceTree = "<group>"; };
+		FF8B75C41D42846E0055AE43 /* functor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functor.hpp; sourceTree = "<group>"; };
+		FF8B75C51D42846E0055AE43 /* group.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = group.hpp; sourceTree = "<group>"; };
+		FF8B75C61D42846E0055AE43 /* invocation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = invocation.hpp; sourceTree = "<group>"; };
+		FF8B75C71D42846E0055AE43 /* is_functor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = is_functor.hpp; sourceTree = "<group>"; };
+		FF8B75C81D42846E0055AE43 /* matcher_base_template.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = matcher_base_template.hpp; sourceTree = "<group>"; };
+		FF8B75C91D42846E0055AE43 /* mutex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mutex.hpp; sourceTree = "<group>"; };
+		FF8B75CA1D42846E0055AE43 /* object_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = object_impl.hpp; sourceTree = "<group>"; };
+		FF8B75CB1D42846E0055AE43 /* parameter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = parameter.hpp; sourceTree = "<group>"; };
+		FF8B75CC1D42846E0055AE43 /* parent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = parent.hpp; sourceTree = "<group>"; };
+		FF8B75CD1D42846E0055AE43 /* root.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = root.hpp; sourceTree = "<group>"; };
+		FF8B75CE1D42846E0055AE43 /* sequence_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sequence_impl.hpp; sourceTree = "<group>"; };
+		FF8B75CF1D42846E0055AE43 /* signature.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = signature.hpp; sourceTree = "<group>"; };
+		FF8B75D01D42846E0055AE43 /* type_name.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = type_name.hpp; sourceTree = "<group>"; };
+		FF8B75D11D42846E0055AE43 /* verifiable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = verifiable.hpp; sourceTree = "<group>"; };
+		FF8B75D21D42846E0055AE43 /* error.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = error.hpp; sourceTree = "<group>"; };
+		FF8B75D31D42846E0055AE43 /* exception.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = exception.hpp; sourceTree = "<group>"; };
+		FF8B75D41D42846E0055AE43 /* format.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = format.hpp; sourceTree = "<group>"; };
+		FF8B75D51D42846E0055AE43 /* log.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = log.hpp; sourceTree = "<group>"; };
+		FF8B75D61D42846E0055AE43 /* matcher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = matcher.hpp; sourceTree = "<group>"; };
+		FF8B75D71D42846E0055AE43 /* mock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mock.hpp; sourceTree = "<group>"; };
+		FF8B75D81D42846E0055AE43 /* object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = object.hpp; sourceTree = "<group>"; };
+		FF8B75D91D42846E0055AE43 /* reset.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reset.hpp; sourceTree = "<group>"; };
+		FF8B75DA1D42846E0055AE43 /* sequence.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sequence.hpp; sourceTree = "<group>"; };
+		FF8B75DB1D42846E0055AE43 /* stream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stream.hpp; sourceTree = "<group>"; };
+		FF8B75DC1D42846E0055AE43 /* verify.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = verify.hpp; sourceTree = "<group>"; };
+		FF8B75DD1D42846E0055AE43 /* version.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = version.hpp; sourceTree = "<group>"; };
+		FF8B75DE1D42849B0055AE43 /* libboost_unit_test_framework-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_unit_test_framework-mt.dylib"; path = "../../../../../../usr/local/Cellar/boost/1.60.0_2/lib/libboost_unit_test_framework-mt.dylib"; sourceTree = "<group>"; };
+		FF8B75E01D4285830055AE43 /* TestSomeClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestSomeClass.cpp; sourceTree = "<group>"; };
+		FF8B75E11D4285830055AE43 /* TestSomeClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TestSomeClass.hpp; sourceTree = "<group>"; };
 		FF9B1D271D3D4EE20017ECBE /* NetInclude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetInclude.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,21 +137,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF8B75731D4283BF0055AE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8B75DF1D42849B0055AE43 /* libboost_unit_test_framework-mt.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FF295F821D3FEE96000F89DF /* logging */ = {
+		FF295F851D3FF5FD000F89DF /* easylogging */ = {
 			isa = PBXGroup;
 			children = (
-				FF295F841D3FEF07000F89DF /* easylogging++.h */,
+				FF295F871D3FF9F1000F89DF /* myconfig.conf */,
+				FF295F861D3FF5FD000F89DF /* easylogging++.h */,
 			);
-			name = logging;
+			name = easylogging;
+			path = NetTest/easylogging;
 			sourceTree = "<group>";
 		};
 		FF490A721D39335E000A41E7 = {
 			isa = PBXGroup;
 			children = (
-				FF295F821D3FEE96000F89DF /* logging */,
+				FF8B75771D4283BF0055AE43 /* BoostUTests */,
+				FF295F851D3FF5FD000F89DF /* easylogging */,
 				FF490A7D1D39335E000A41E7 /* NetTest */,
 				FF490A7C1D39335E000A41E7 /* Products */,
 			);
@@ -68,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				FF490A7B1D39335E000A41E7 /* NetTest */,
+				FF8B75761D4283BF0055AE43 /* BoostUTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +191,89 @@
 			path = NetTest;
 			sourceTree = "<group>";
 		};
+		FF8B75771D4283BF0055AE43 /* BoostUTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF8B75DE1D42849B0055AE43 /* libboost_unit_test_framework-mt.dylib */,
+				FF8B757F1D42846E0055AE43 /* turtle-1.3.0 */,
+				FF8B75781D4283BF0055AE43 /* main.cpp */,
+				FF8B75E01D4285830055AE43 /* TestSomeClass.cpp */,
+				FF8B75E11D4285830055AE43 /* TestSomeClass.hpp */,
+			);
+			path = BoostUTests;
+			sourceTree = "<group>";
+		};
+		FF8B757F1D42846E0055AE43 /* turtle-1.3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				FF8B75B31D42846E0055AE43 /* include */,
+			);
+			path = "turtle-1.3.0";
+			sourceTree = "<group>";
+		};
+		FF8B75B31D42846E0055AE43 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FF8B75B41D42846E0055AE43 /* turtle */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FF8B75B41D42846E0055AE43 /* turtle */ = {
+			isa = PBXGroup;
+			children = (
+				FF8B75B51D42846E0055AE43 /* cleanup.hpp */,
+				FF8B75B61D42846E0055AE43 /* config.hpp */,
+				FF8B75B71D42846E0055AE43 /* constraint.hpp */,
+				FF8B75B81D42846E0055AE43 /* constraints.hpp */,
+				FF8B75B91D42846E0055AE43 /* detail */,
+				FF8B75D21D42846E0055AE43 /* error.hpp */,
+				FF8B75D31D42846E0055AE43 /* exception.hpp */,
+				FF8B75D41D42846E0055AE43 /* format.hpp */,
+				FF8B75D51D42846E0055AE43 /* log.hpp */,
+				FF8B75D61D42846E0055AE43 /* matcher.hpp */,
+				FF8B75D71D42846E0055AE43 /* mock.hpp */,
+				FF8B75D81D42846E0055AE43 /* object.hpp */,
+				FF8B75D91D42846E0055AE43 /* reset.hpp */,
+				FF8B75DA1D42846E0055AE43 /* sequence.hpp */,
+				FF8B75DB1D42846E0055AE43 /* stream.hpp */,
+				FF8B75DC1D42846E0055AE43 /* verify.hpp */,
+				FF8B75DD1D42846E0055AE43 /* version.hpp */,
+			);
+			path = turtle;
+			sourceTree = "<group>";
+		};
+		FF8B75B91D42846E0055AE43 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				FF8B75BA1D42846E0055AE43 /* action.hpp */,
+				FF8B75BB1D42846E0055AE43 /* addressof.hpp */,
+				FF8B75BC1D42846E0055AE43 /* child.hpp */,
+				FF8B75BD1D42846E0055AE43 /* context.hpp */,
+				FF8B75BE1D42846E0055AE43 /* expectation_template.hpp */,
+				FF8B75BF1D42846E0055AE43 /* formatter.hpp */,
+				FF8B75C01D42846E0055AE43 /* function.hpp */,
+				FF8B75C11D42846E0055AE43 /* function_impl_template.hpp */,
+				FF8B75C21D42846E0055AE43 /* function_iterate.hpp */,
+				FF8B75C31D42846E0055AE43 /* function_template.hpp */,
+				FF8B75C41D42846E0055AE43 /* functor.hpp */,
+				FF8B75C51D42846E0055AE43 /* group.hpp */,
+				FF8B75C61D42846E0055AE43 /* invocation.hpp */,
+				FF8B75C71D42846E0055AE43 /* is_functor.hpp */,
+				FF8B75C81D42846E0055AE43 /* matcher_base_template.hpp */,
+				FF8B75C91D42846E0055AE43 /* mutex.hpp */,
+				FF8B75CA1D42846E0055AE43 /* object_impl.hpp */,
+				FF8B75CB1D42846E0055AE43 /* parameter.hpp */,
+				FF8B75CC1D42846E0055AE43 /* parent.hpp */,
+				FF8B75CD1D42846E0055AE43 /* root.hpp */,
+				FF8B75CE1D42846E0055AE43 /* sequence_impl.hpp */,
+				FF8B75CF1D42846E0055AE43 /* signature.hpp */,
+				FF8B75D01D42846E0055AE43 /* type_name.hpp */,
+				FF8B75D11D42846E0055AE43 /* verifiable.hpp */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,14 +284,35 @@
 				FF490A771D39335E000A41E7 /* Sources */,
 				FF490A781D39335E000A41E7 /* Frameworks */,
 				FF490A791D39335E000A41E7 /* CopyFiles */,
+				FF295F8F1D3FFC47000F89DF /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF8B75FD1D429B790055AE43 /* PBXTargetDependency */,
+			);
+			name = NetTest;
+			productName = NetTest;
+			productReference = FF490A7B1D39335E000A41E7 /* NetTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		FF8B75751D4283BF0055AE43 /* BoostUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8B757A1D4283BF0055AE43 /* Build configuration list for PBXNativeTarget "BoostUTests" */;
+			buildPhases = (
+				FF8B75721D4283BF0055AE43 /* Sources */,
+				FF8B75731D4283BF0055AE43 /* Frameworks */,
+				FF8B75741D4283BF0055AE43 /* CopyFiles */,
+				FF8B75E31D4289F20055AE43 /* CopyFiles */,
+				FF8B76071D42A5E40055AE43 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NetTest;
-			productName = NetTest;
-			productReference = FF490A7B1D39335E000A41E7 /* NetTest */;
+			name = BoostUTests;
+			productName = BoostUTests;
+			productReference = FF8B75761D4283BF0055AE43 /* BoostUTests */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -116,6 +325,9 @@
 				ORGANIZATIONNAME = roko;
 				TargetAttributes = {
 					FF490A7A1D39335E000A41E7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FF8B75751D4283BF0055AE43 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -133,9 +345,26 @@
 			projectRoot = "";
 			targets = (
 				FF490A7A1D39335E000A41E7 /* NetTest */,
+				FF8B75751D4283BF0055AE43 /* BoostUTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FF8B76071D42A5E40055AE43 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF490A771D39335E000A41E7 /* Sources */ = {
@@ -148,7 +377,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF8B75721D4283BF0055AE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8B75E21D4285830055AE43 /* TestSomeClass.cpp in Sources */,
+				FF8B757E1D4284290055AE43 /* SocketUtil.cpp in Sources */,
+				FF8B757D1D4284250055AE43 /* UDPSocket.cpp in Sources */,
+				FF8B75791D4283BF0055AE43 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF8B75FD1D429B790055AE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8B75751D4283BF0055AE43 /* BoostUTests */;
+			targetProxy = FF8B75FC1D429B790055AE43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FF490A801D39335E000A41E7 /* Debug */ = {
@@ -238,6 +486,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/NetTestPCH.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +498,30 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/NetTestPCH.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF8B757B1D4283BF0055AE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/NetTestPCH.pch";
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.60.0_2/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.60.0_2/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF8B757C1D4283BF0055AE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/NetTestPCH.pch";
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.60.0_2/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.60.0_2/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -269,6 +543,15 @@
 			buildConfigurations = (
 				FF490A831D39335E000A41E7 /* Debug */,
 				FF490A841D39335E000A41E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8B757A1D4283BF0055AE43 /* Build configuration list for PBXNativeTarget "BoostUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8B757B1D4283BF0055AE43 /* Debug */,
+				FF8B757C1D4283BF0055AE43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
