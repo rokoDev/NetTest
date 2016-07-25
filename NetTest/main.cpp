@@ -24,6 +24,6 @@ int main(int argc, const char * argv[]) {
     el::Loggers::reconfigureAllLoggers(conf);
     // Now all the loggers will use configuration from file
     
-    LOG(INFO) << "Hello, World!\n";
+    LOG(INFO) << "Hello, World! It's me!\n";
     return 0;
 }
