@@ -1,0 +1,12 @@
+language: cpp
+osx_image: xcode7.3
+xcode_project: NetTest.xcodeproj
+xcode_scheme: NetTest
+compiler:
+- clang
+os:
+- osx10.11
+
+branches:
+  only:
+  - master
