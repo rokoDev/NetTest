@@ -2,11 +2,25 @@ language: cpp
 osx_image: xcode7.3
 xcode_project: NetTest.xcodeproj
 xcode_scheme: NetTest
+
+os:
+- osx
+
 compiler:
 - clang
-os:
-- osx10.11
+
+addons:
+  apt:
+    packages:
+      - boost
+
+sudo:
+- false
 
 branches:
   only:
   - master
+
+before install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update          ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install boost; fi
